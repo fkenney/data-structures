@@ -1,28 +1,21 @@
 package com.algorithms;
 
 public class BinaryConvert {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int number = convertFromBinary("100101");
         System.out.println("Number for binary 100101: " + number);
         number = convertFromOctal("17");
         System.out.println("Number for octal 17: " + number);
     }
 
-    public static int convertFromBinary(String binary){
-        int conversion = 1;
+    public static int convertFromBinary(String binary) {
         int result = 0;
-        /*
-        for (int i = 1; i <= binary.length(); i++) {
-            if (binary.charAt(binary.length() - i) == '1')
-                result += conversion;
-            conversion *= 2;
-        }
-        */
-        // this could be a preferred solution: decrement from last element
-        for (int i = binary.length()-1; i>=0; i-- ){
-            System.out.println("i is " + i);
-            if (binary.charAt(i) == '1'){
-                result += conversion;
+        int conversion = 1;
+        for (int i = binary.length() - 1; i >= 0; i--) {
+            int num = Character.getNumericValue(binary.charAt(i));
+            if (num == 1) {
+                num *= conversion;
+                result += num;
             }
             conversion *= 2;
         }
@@ -30,8 +23,18 @@ public class BinaryConvert {
     }
 
     public static int convertFromOctal(String octal) {
-        // TODO-Lab1.2: return calculated decimal value converted from octal String
-        return 0;
+        int result = 0;
+        int conversion = 1;
+        for (int i = octal.length() - 1; i >= 0; i--) {
+            int num = Character.getNumericValue(octal.charAt(i));
+            if (num != 0) {
+                num *= conversion;
+                result += num;
+            }
+            conversion *= 8;
+        }
+        return result;
+
     }
 
 

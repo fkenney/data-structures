@@ -11,7 +11,7 @@ public class BinaryConvert {
         int result = 0;
         int conversion = 1;
         for(int i = binary.length() -1; i >= 0 ; i--){
-            int num = Integer.parseInt(String.valueOf(binary.charAt(i)));
+            int num = Character.getNumericValue(binary.charAt(i));
             if (num == 1){
                 num *=conversion;
                 result += num;

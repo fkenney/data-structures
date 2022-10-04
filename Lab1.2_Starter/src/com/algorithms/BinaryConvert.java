@@ -6,6 +6,9 @@ public class BinaryConvert {
         System.out.println("Number for binary 100101: " + number);
         number = convertFromOctal("17");
         System.out.println("Number for octal 17: " + number);
+
+        int something = test("A");
+        System.out.println("test: " + something);
     }
 
     public static int convertFromBinary(String binary) {
@@ -37,5 +40,9 @@ public class BinaryConvert {
 
     }
 
+    public static int test(String number){
+        return Character.getNumericValue(number.charAt(0));
+//        return Integer.parseInt(number, 16);
+    }
 
 }

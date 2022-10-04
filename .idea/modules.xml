@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Lab1.1_Solution/Lab1.1_Solution.iml" filepath="$PROJECT_DIR$/Lab1.1_Solution/Lab1.1_Solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab1.1_Starter/Lab1.1_Starter.iml" filepath="$PROJECT_DIR$/Lab1.1_Starter/Lab1.1_Starter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lab1.2_Solution/Lab1.2_Solution.iml" filepath="$PROJECT_DIR$/Lab1.2_Solution/Lab1.2_Solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab1.2_Starter/Lab1.2_Starter.iml" filepath="$PROJECT_DIR$/Lab1.2_Starter/Lab1.2_Starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab1.3_Solution/Lab1.3_Solution.iml" filepath="$PROJECT_DIR$/Lab1.3_Solution/Lab1.3_Solution.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab1.3_Starter/Lab1.3_Starter.iml" filepath="$PROJECT_DIR$/Lab1.3_Starter/Lab1.3_Starter.iml" />

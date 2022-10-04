@@ -9,17 +9,17 @@ public class BinaryConvert {
     }
 
     public static int convertFromBinary(String binary){
+        if (binary == null || binary.length() == 0){
+            throw new IllegalArgumentException("Invalid input string");
+        }
+
         int conversion = 1;
         int result = 0;
-        /*
-        for (int i = 1; i <= binary.length(); i++) {
-            if (binary.charAt(binary.length() - i) == '1')
-                result += conversion;
-            conversion *= 2;
-        }
-        */
+
         for (int i = binary.length()-1; i>=0; i-- ){
-            System.out.println("i is " + i);
+            if( binary.charAt(i) != '0' && binary.charAt(i) != '1'){
+                throw new IllegalArgumentException("Invalid binary number");
+            }
             if (binary.charAt(i) == '1'){
                 result += conversion;
             }
@@ -33,7 +33,7 @@ public class BinaryConvert {
         int result = 0;
         for (int i = octal.length()-1; i>=0; i-- ){
             System.out.println("i is " + i);
-            int num = Integer.parseInt(Character.toString(octal.charAt(i)));
+            int num = Character.getNumericValue(octal.charAt(i));
             result += num*conversion;
             conversion *= 8;
         }

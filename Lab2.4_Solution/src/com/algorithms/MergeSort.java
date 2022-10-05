@@ -56,7 +56,7 @@ public class MergeSort {
         System.arraycopy(arrayTemp, 0, array, start, arrayTemp.length);
     }
 
-    public static void main(String[] arge){
+    public static void main(String[] args){
         MergeSort sorter = new MergeSort();
         int[] array = new int[]{4, 5, 33, 17, 3, 21, 1, 16};
         System.out.println("Unsorted:");
